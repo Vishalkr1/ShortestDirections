@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <fragment xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MapsActivity"/>
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="Long click on map to select location"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="550dp"
+        android:gravity="center_horizontal"
+        android:textSize="24sp"
+        android:fontFamily="serif"
+        android:textColor="#DD2C00"/>
+
+    <Button
+        android:id="@+id/GetDirectionBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:onClick="GetDirections"
+        android:background="#DA498A"
+        android:text="Get Directions" />
+
+</RelativeLayout>
